@@ -6,5 +6,7 @@ class WordController < ApplicationController
       @Display[w]
       @Display[w] = Wordnik.word.get_definitions(w)[0]["text"]
     end
+    @word_array = @Display.keys
+    @word_array = @word_array.shuffle
   end
 end
