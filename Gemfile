@@ -56,13 +56,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'wordnik'
 
-<<<<<<< HEAD
 
 # readded jquery for bootsrap
 gem 'autoprefixer-rails'
 gem 'bootstrap', '~> 4.0.0.beta'
 gem 'jquery-rails'
-=======
-gem 'json'
-
->>>>>>> master
