@@ -48,22 +48,24 @@
 
 <form>
     <div class="form-group">
-        <label for="formGroupExampleInput"><%= @definition_array[0] %></label>
-        <input type="text" class="form-control" id="formGroupExampleInput" name='answer' placeholder="Enter word">
+        <%= form_tag("/", method: "get") do %>
     </div>
     <div class="form-group">
-        <label for="formGroupExampleInput2"><%= @definition_array[1] %></label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" name=:answer placeholder="Enter word">
+        <%= label_tag(:answer1, @definition_array[0]) %>
+            <%= text_field_tag( :answer1, "", :class => "form-control", placeholder: "Enter one of the words" )%>
     </div>
     <div class="form-group">
-        <label for="formGroupExampleInput3"><%= @definition_array[2] %></label>
-        <input type="text" class="form-control" id="formGroupExampleInput3" name=:answer placeholder="Enter word">
+        <%= label_tag(:answer2, @definition_array[1]) %>
+            <%= text_field_tag( :answer2, "", :class => "form-control", placeholder: "Enter one of the words" )%>
     </div>
     <div class="form-group">
-        <label for="formGroupExampleInput4"><%= @definition_array[3] %></label>
-        <input type="text" class="form-control" id="formGroupExampleInput4" name=:answer placeholder="Enter word">
+        <%= label_tag(:answer3, @definition_array[2]) %>
+            <%= text_field_tag( :answer3, "", :class => "form-control", placeholder: "Enter one of the words" )%>
     </div>
-    <%= button_tag(type: 'submit', class: "btn btn-primary") do %>
-        <i class="icon-ok icon-white"></i> Save
-        <% end %>
+    <%= label_tag(:answer4, @definition_array[3]) %>
+        <%= text_field_tag( :answer4, "", :class => "form-control", placeholder: "Enter one of the words" )%>
+            </div>
+            <br>
+            <%= submit_tag 'Submit', class: "btn btn-primary" %>
+                <% end %>
 </form>
