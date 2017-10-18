@@ -11,5 +11,12 @@ class WordController < ApplicationController
 
     @definition_array = @Display.values
     @definition_array = @definition_array
+
+    @Answer = Hash.new 
+    (1...4).each do |a|
+      a = params['answer']
+      @Answer[a]
+    end
+    
   end
 end
