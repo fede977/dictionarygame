@@ -1,62 +1,66 @@
 <div class="jumbotron">
-    <h1 class="display-3">Guessing game!</h1>
+    <h1 class="display-3" align="center">Guessing game!</h1>
 </div>
 
 <div class="row">
     <div class="col">
         <div class="card word">
             <div class="card-block">
-                <h3 class="card-title">
+                <h3 class="card-title" align="center">
                     <%= @word_array[0] %>
                 </h3>
             </div>
         </div>
     </div>
+
     <div class="col">
         <div class="card word">
             <div class="card-block">
-                <h3 class="card-title">
+                <h3 class="card-title" align="center">
                     <%= @word_array[1] %>
                 </h3>
             </div>
         </div>
     </div>
+
     <div class="col">
         <div class="card word">
             <div class="card-block">
-                <h3 class="card-title">
+                <h3 class="card-title" align="center">
                     <%= @word_array[2] %>
                 </h3>
             </div>
         </div>
     </div>
+
     <div class="col">
         <div class="card word">
             <div class="card-block">
-                <h3 class="card-title">
+                <h3 class="card-title" align="center">
                     <%= @word_array[3] %>
                 </h3>
             </div>
         </div>
     </div>
 </div>
-
+</br>
+</br>
 
 <form>
     <div class="form-group">
-        <label for="formGroupExampleInput">Def</label>
+        <label for="formGroupExampleInput"><%= @definition_array[0] %></label>
         <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter word">
     </div>
     <div class="form-group">
-        <label for="formGroupExampleInput2">Def</label>
+        <label for="formGroupExampleInput2"><%= @definition_array[1] %></label>
         <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter word">
     </div>
     <div class="form-group">
-        <label for="formGroupExampleInput3">Def</label>
+        <label for="formGroupExampleInput3"><%= @definition_array[2] %></label>
         <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Enter word">
     </div>
     <div class="form-group">
-        <label for="formGroupExampleInput4">Def</label>
+        <label for="formGroupExampleInput4"><%= @definition_array[3] %></label>
         <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Enter word">
     </div>
 </form>

@@ -8,5 +8,8 @@ class WordController < ApplicationController
     end
     @word_array = @Display.keys
     @word_array = @word_array.shuffle
+
+    @definition_array = @Display.values
+    @definition_array = @definition_array
   end
 end
