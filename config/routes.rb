@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :welcomes
   get 'game/guessing_game'
   get 'word/index'
   get 'word/win'

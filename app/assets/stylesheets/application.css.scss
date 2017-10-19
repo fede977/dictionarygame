@@ -12,9 +12,8 @@
 */
 
 @import "bootstrap";
-@import "game";
-@import "word";
-$footer-length: 160px;
+@import "welcomes";
+$footer-length: 100px;
 body {
     margin: 0;
     padding: 0;
