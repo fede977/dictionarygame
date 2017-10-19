@@ -14,9 +14,12 @@ class WordController < ApplicationController
 
     @Answer = Hash.new 
     (1...4).each do |a|
-      a = params['answer']
+      a = params[:answer]
       @Answer[a]
     end
     
+    if @Answer == @Display
+      redirect_to '/GameOver'
+    end
   end
 end
