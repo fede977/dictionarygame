@@ -1,0 +1,10 @@
+<div class="card text-center lose">
+    <div class="card-block">
+        <h4 class="card-title">You lost</h4>
+        <p class="card-text">One or more of the word-definitions combinations was incorrect.</p>
+        <%= button_to "Try Again", word_index_path, :method => "get", :class => "btn btn-primary try-again" %>
+            <div class="card-footer">
+                <%= @score %> out of 4 correct
+            </div>
+    </div>
+</div>

@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Dictionary</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+            <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+    <div class="webpage">
+        <div class="jumbotron">
+            <h1 class="display-3" align="center">Guessing game!</h1>
+        </div>
+        <div class="container content">
+            <%= yield %>
+        </div>
+        <footer class="bd-footer text-muted">
+            <div class="container">
+                <ul class=" bd-footer-links">
+                    <li><a href=" ">Examples</a></li>
+                    <li><a href=" ">About</a></li>
+                </ul>
+                <p class="footer-child ">Designed and built by Martti and Federico</p>
+                <p class="footer-child ">Currently version 0.1, No License.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
 </html>

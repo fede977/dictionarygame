@@ -22,4 +22,12 @@ class WordController < ApplicationController
       redirect_to '/GameOver'
     end
   end
+
+  def win
+  end
+
+  def lose
+    @score = 0  # placeholder value 0
+  end
+
 end

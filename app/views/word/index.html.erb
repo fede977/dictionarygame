@@ -1,9 +1,5 @@
-<div class="jumbotron">
-    <h1 class="display-3" align="center">Guessing game!</h1>
-</div>
-
 <div class="row">
-    <div class="col">
+    <div class="col-6 col-md-3">
         <div class="card word">
             <div class="card-block">
                 <h3 class="card-title" align="center">
@@ -13,7 +9,7 @@
         </div>
     </div>
 
-    <div class="col">
+    <div class="col-6 col-md-3">
         <div class="card word">
             <div class="card-block">
                 <h3 class="card-title" align="center">
@@ -23,7 +19,7 @@
         </div>
     </div>
 
-    <div class="col">
+    <div class="col-6 col-md-3">
         <div class="card word">
             <div class="card-block">
                 <h3 class="card-title" align="center">
@@ -33,7 +29,7 @@
         </div>
     </div>
 
-    <div class="col">
+    <div class="col-6 col-md-3">
         <div class="card word">
             <div class="card-block">
                 <h3 class="card-title" align="center">
@@ -46,10 +42,8 @@
 </br>
 </br>
 
-<form>
-    <div class="form-group">
-        <%= form_tag("/", method: "get") do %>
-    </div>
+
+<%= form_tag("", method: "get") do %>
     <div class="form-group">
         <%= label_tag(:answer1, @definition_array[0]) %>
             <%= text_field_tag( :answer, "", :class => "form-control", placeholder: "Enter one of the words" )%>
@@ -62,6 +56,7 @@
         <%= label_tag(:answer3, @definition_array[2]) %>
             <%= text_field_tag( :answer, "", :class => "form-control", placeholder: "Enter one of the words" )%>
     </div>
+<<<<<<< HEAD
     <%= label_tag(:answer4, @definition_array[3]) %>
         <%= text_field_tag( :answer, "", :class => "form-control", placeholder: "Enter one of the words" )%>
             </div>
@@ -69,3 +64,16 @@
             <%= submit_tag 'Submit', class: "btn btn-primary" %>
                 <% end %>
 </form>
+=======
+    <div class="form-group">
+        <%= label_tag(:answer4, @definition_array[3]) %>
+            <%= text_field_tag( :answer4, "", :class => "form-control", placeholder: "Enter one of the words" )%>
+    </div>
+    <%= submit_tag 'Submit', class: "btn btn-primary" %>
+        <% end %>
+
+
+
+            <%= button_to "Win button for debuggin", word_win_path, :method => "get", :class => "btn btn-success" %>
+                <%= button_to "Lose button for debuggin", word_lose_path, :method => "get", :class => "btn btn-danger" %>
+>>>>>>> fc9e3404a8bbf20c0a2f3bae76cddade054b0b52
