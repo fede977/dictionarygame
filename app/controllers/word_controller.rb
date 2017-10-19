@@ -17,7 +17,7 @@ class WordController < ApplicationController
   end
 
   def lose
-    @score = 0
+    @score = 0  # placeholder value 0
   end
 
 end
