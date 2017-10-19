@@ -4,3 +4,25 @@
 .word {
     margin: 1rem, auto;
 }
+
+.try-again {
+    margin-bottom: 1rem;
+}
+
+.card {
+    padding-top: 1rem;
+}
+
+.lose {
+    background-color: rgb(228, 119, 119);
+}
+
+.win {
+    background-color: rgb(100, 163, 100);
+}
+
+.form-group {
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 5px;
+    padding: 10px;
+}

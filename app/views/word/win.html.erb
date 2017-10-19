@@ -1,0 +1,10 @@
+<div class="card text-center win">
+    <div class="card-block">
+        <h4 class="card-title">You win</h4>
+        <p class="card-text">All answers were correct.</p>
+        <%= button_to "Continue", word_index_path, :method => "get", :class => "btn btn-primary try-again" %>
+            <div class="card-footer">
+                4 out of 4 correct
+            </div>
+    </div>
+</div>

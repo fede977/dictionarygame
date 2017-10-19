@@ -12,4 +12,12 @@ class WordController < ApplicationController
     @definition_array = @Display.values
     @definition_array = @definition_array
   end
+
+  def win
+  end
+
+  def lose
+    @score = 0
+  end
+
 end
