@@ -46,25 +46,16 @@
 <%= form_tag("", method: "get") do %>
     <div class="form-group">
         <%= label_tag(:answer1, @definition_array[0]) %>
-            <%= text_field_tag( :answer, "", :class => "form-control", placeholder: "Enter one of the words" )%>
+            <%= text_field_tag( :answer1, "", :class => "form-control", placeholder: "Enter one of the words" )%>
     </div>
     <div class="form-group">
         <%= label_tag(:answer2, @definition_array[1]) %>
-            <%= text_field_tag( :answer, "", :class => "form-control", placeholder: "Enter one of the words" )%>
+            <%= text_field_tag( :answer2, "", :class => "form-control", placeholder: "Enter one of the words" )%>
     </div>
     <div class="form-group">
         <%= label_tag(:answer3, @definition_array[2]) %>
-            <%= text_field_tag( :answer, "", :class => "form-control", placeholder: "Enter one of the words" )%>
+            <%= text_field_tag( :answer3, "", :class => "form-control", placeholder: "Enter one of the words" )%>
     </div>
-<<<<<<< HEAD
-    <%= label_tag(:answer4, @definition_array[3]) %>
-        <%= text_field_tag( :answer, "", :class => "form-control", placeholder: "Enter one of the words" )%>
-            </div>
-            <br>
-            <%= submit_tag 'Submit', class: "btn btn-primary" %>
-                <% end %>
-</form>
-=======
     <div class="form-group">
         <%= label_tag(:answer4, @definition_array[3]) %>
             <%= text_field_tag( :answer4, "", :class => "form-control", placeholder: "Enter one of the words" )%>
@@ -76,4 +67,3 @@
 
             <%= button_to "Win button for debuggin", word_win_path, :method => "get", :class => "btn btn-success" %>
                 <%= button_to "Lose button for debuggin", word_lose_path, :method => "get", :class => "btn btn-danger" %>
->>>>>>> fc9e3404a8bbf20c0a2f3bae76cddade054b0b52
