@@ -1,0 +1,30 @@
+e025115	fede977	Fri Oct 20 18:24:47 2017	welcoe
+1536d51	fede977	Fri Oct 20 18:22:08 2017	fixed score
+8d4ca08	mara42	Fri Oct 20 18:18:15 2017	Merge pull request #1 from fede977/welcome
+1bd427a	Martti	Fri Oct 20 17:56:52 2017	files left from last commit
+934c66e	Martti	Fri Oct 20 17:56:37 2017	changed some html and improved footer
+48ec044	fede977	Fri Oct 20 16:56:50 2017	repaired JSON error
+89a1f5b	fede977	Fri Oct 20 13:35:39 2017	Answer checking and redirection to win/lose pages
+2ab779f	fede977	Fri Oct 20 00:25:35 2017	nothing
+da16a37	fede977	Fri Oct 20 00:22:13 2017	"nothing too important, just litle changes to the word controller"
+781b127	Martti	Fri Oct 20 00:04:53 2017	changed root to welcomes#new
+65b47c1	Martti	Fri Oct 20 00:01:41 2017	New game page has the basic  structure, also removed deprecrated game_controller and reated files
+fc9e340	Martti	Thu Oct 19 21:37:45 2017	removed duplicate HTML-form
+14b4aed	Martti	Thu Oct 19 21:21:49 2017	imporved css, added win and lose page in view and function within word_controller, temp debugging win and lose buttons
+b5871a2	fede977	Wed Oct 18 22:02:56 2017	new
+31eccbc	fede977	Wed Oct 18 22:00:47 2017	backup
+ca30e40	Martti	Wed Oct 18 20:32:53 2017	added a bootstrap container to wrap all layouts
+944a107	Martti	Wed Oct 18 18:47:19 2017	Changed forms to ERB format
+980f659	fede977	Wed Oct 18 14:46:14 2017	Shaped word guessing layout, added definitions
+4bffbd4	Martti	Tue Oct 17 17:46:06 2017	Added visual stuff and displayed words in view
+da8aff8	Martti	Tue Oct 17 17:31:27 2017	"added some boxes to view"
+e925d4d	fede977	Tue Oct 17 17:29:36 2017	loop to create words
+fed5597	Martti	Tue Oct 17 17:20:10 2017	gemfile changes and removing index
+264fa0a	Martti	Tue Oct 17 17:11:11 2017	"some change to gemfile"
+6197613	Martti	Tue Oct 17 17:08:36 2017	"some merge stuff, i think"
+18536b2	fede977	Tue Oct 17 17:05:54 2017	added useful commands
+d7a0741	Martti	Tue Oct 17 16:07:14 2017	added some bootsrap html stuff
+8a4383b	fede977	Tue Oct 17 16:05:56 2017	API key
+730241b	Martti	Tue Oct 17 14:49:27 2017	added bootsrap gem and created new branch
+88d3420	fede977	Tue Oct 10 12:34:52 2017	added gem
+6268b20	fede977	Tue Oct 10 12:29:07 2017	first commit
