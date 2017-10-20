@@ -12,60 +12,29 @@
 */
 
 @import "bootstrap";
-@import "game";
+@import "welcomes";
 @import "word";
-$footer-length: 160px;
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+$footer-length: 40px;
+html {
+    position: relative;
+    min-height: 100%;
 }
 
-.webpage {
-    min-height: 100%;
-    position: relative;
+body {
+    margin-bottom: $footer-length;
+    /* Margin bottom by footer height */
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: $footer-length;
+    line-height: $footer-length;
+    /* Vertically center the text there */
+    background-color: #f5f5f5;
 }
 
 .content {
     padding-bottom: $footer-length;
-}
-
-// I know the stuff below is a total mess, I'll clean it if I have time
-footer {
-    background-color: rgb(190, 190, 190);
-    left: 0;
-    bottom: 0;
-    height: $footer-length;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    .container {
-        padding: 0.5rem;
-        margin: 0px;
-        height: 100%
-    }
-    .footer-child {
-        width: 100%;
-        height: 25%;
-    }
-    ul {
-        padding: 0px;
-        margin: 0px;
-        height: 50%;
-        li {
-            height: 50%;
-        }
-    }
-    li {
-        list-style: none;
-        a {
-            color: black;
-            &:hover {
-                color: blue;
-            }
-        }
-    }
-    p {
-        margin: 0px;
-    }
 }
