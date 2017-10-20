@@ -12,6 +12,9 @@ class WordController < ApplicationController
     if !@Answer.empty?
       @word_array=JSON.parse(session[:word_array])
       if @Answer != @word_array
+        session[:Answer] = @Answer
+        @score = (@Answer - @word_array).length
+        session[:score] = @score
         redirect_to '/word/lose'
       else
         redirect_to '/word/win'
@@ -38,7 +41,10 @@ class WordController < ApplicationController
   end
 
   def lose
-    @score = 0  # placeholder value 0
-  end
+    
+    @score = session[:score]
+    puts "aaa#{@score}"
 
+  end
 end
+  
