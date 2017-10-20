@@ -1,3 +1,4 @@
+09a66ee	fede977	Fri Oct 20 20:18:37 2017	added pg gem
 e025115	fede977	Fri Oct 20 18:24:47 2017	welcoe
 1536d51	fede977	Fri Oct 20 18:22:08 2017	fixed score
 8d4ca08	mara42	Fri Oct 20 18:18:15 2017	Merge pull request #1 from fede977/welcome
