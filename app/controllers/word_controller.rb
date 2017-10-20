@@ -7,9 +7,10 @@ class WordController < ApplicationController
       end
     end
     
-    @word_array=JSON.parse(session[:word_array])
+    
     puts "#{@Answer} != #{@word_array}"
     if !@Answer.empty?
+      @word_array=JSON.parse(session[:word_array])
       if @Answer != @word_array
         redirect_to '/word/lose'
       else
