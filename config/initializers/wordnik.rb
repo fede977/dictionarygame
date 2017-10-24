@@ -1,5 +1,5 @@
 Wordnik.configure do |config|
-    config.api_key =  'ab76554994d428d1f943284664a0bc063799701b059e05ab3'              # required
+    config.api_key =                # required
     config.username =                     # optional, but needed for user-related functions
     config.password =                # optional, but needed for user-related functions
     config.response_format =  "json"          # defaults to json, but xml is also supported
